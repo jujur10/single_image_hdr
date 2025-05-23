@@ -41,8 +41,10 @@ cd single_image_hdr
 2. Setup the environment
 
 ```bash
-conda env create -n single-image-hdr -f environment.yml
-conda activate single-image-hdr
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 ## Training and evaluation
